@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Move</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="JS/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">
+                <!-- Menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-light"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand text-light titulo-secundario" href="#">Zen Move</a>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse d-flex justify-content-center d-none d-lg-flex"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 fs-5 titulo-secundario">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="index.html"
+                                target="_self">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page"
+                                href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="sale.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Carrito -->
+                <div class="nav-item ms-3">
+                    <a class="nav-link text-light" href="#" id="cart-link">
+                        <i class="bi bi-cart fs-3"></i>
+                        <span id="cart-count" class="badge bg-danger">0</span>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title titulo-secundario" id="offcanvasRightLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 titulo-secundario">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sale.html">Sale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>zen</h1>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/car2.webp" class="d-block w-100 " alt="collage1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car3.webp" class="d-block w-100" alt="collage2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car4.webp" class="d-block w-100" alt="collage3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="text-center mt-5 text-light titulo-principal ">Quienes somos</h2>
+                    <p class=" container text-center text-light bg-dark parrafo"> Nos dedicamos a
+                        <strong>(I+D+I)</strong> investigación, desarrollo e innovación tecnológica y sensorial,
+                        especializados en el deporte, salud y la interacción
+                        usuario-producto.
+                    </p>
+                </div>
+
+                <div class="col-12 nosotros d-flex">
+                    <p class="container align-content-center text-light  parrafo">Tenemos como misión y <strong>
+                            mejorar el
+                            rendimiento</strong> de la comunidad deportiva y terapéutica con productos y rutinas
+                        especializadas, para
+                        cada área de interés. Contamos con un equipo capacitado y en constante estudio de los avances
+                        tecnológicos y científicos que nos permitan mejorar el servicio y la experiencia que le
+                        entregamos a nuestros usuarios. Avanzando hacia el desarrollo de nuevos productos, interacciones
+                        o mejoras de las ya existentes. Además, constantemente se busca el desarrollo de nuevos
+                        productos, interacciones y mejoras de los ya existentes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="text-center mt-5 mb-5 text-light titulo-principal">Pro Pallas</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-12 col-md-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/prodcFrente1.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/producDorso1.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description  titulo-secundario">Pala Pádel Pro - Colo Colo Albo Edición
+                                Limitada</h2>
+                            <p class="card-price  titulo-secundario"><strong>$129.990</strong></p>
+                            <button class="btn btn-outline-primary  parrafo">Comprar</button>
+                            <!-- Botón que abre el modal -->
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct1">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 1 -->
+                <div class="modal fade" id="modalProduct1" tabindex="-1" aria-labelledby="modalLabel1"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title  titulo-secundario" id="modalLabel1">Nueva COLO-COLO ALBO PRO
+                                    -EDICIÓN LIMITADA,colección 2024 Elite.</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>TECNOLOGÍA</strong></p>
+                                <ol>
+                                    <li>Carbón frame</li>
+                                </ol>
+                                <ol>
+                                    <li>Forma diamante</li>
+                                </ol>
+                                <ol>
+                                    <li>Núcleo de Eva Black 17</li>
+                                </ol>
+                                <ol>
+                                    <li>Exterior de fibra de carbono</li>
+                                </ol>
+                                <p> esta diseñada con forma de diamante, núcleo de Eva Black 17 Y con exterior de fibra
+                                    de carbono para un control elevado y estratégico de la bola, además esta reforzado
+                                    con su marco de tecnología <strong> CARBON FRAME </strong> rígido para mayor
+                                    resistencia y
+                                    durabilidad.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/prodcFrente2.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/producDorso2.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description  titulo-secundario">Pala Pádel Pro - Colo Colo Cacique
+                                Edición Limitada</h2>
+                            <p class="card-price titulo-secundario"><strong> $99.990 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct2">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 2 -->
+                <div class="modal fade" id="modalProduct2" tabindex="-1" aria-labelledby="modalLabel2"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title  titulo-secundario" id="modalLabel2">Nueva COLO-COLO CACIQUE PRO
+                                    - EDICIÓN LIMITADA,
+                                    colección 2024 Elite.</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p> <strong> TECNOLOGÍA: </strong></p>
+                                <ol>
+                                    <li>Carbón frame</li>
+                                </ol>
+                                <ol>
+                                    <li>Forma redonda</li>
+                                </ol>
+                                <ol>
+                                    <li>Núcleo de Eva Blanca 15</li>
+                                </ol>
+                                <ol>
+                                    <li>Exterior de fibra de vidrio</li>
+                                </ol>
+                                <p>esta diseñada con forma redonda, núcleo de <strong> Eva Blanca 15 </strong> Y con
+                                    exterior de fibra de
+                                    vidrio para un control elevado y estratégico de la bola, además esta reforzado con
+                                    su marco de tecnología CARBON FRAME rígido para mayor resistencia y durabilidad.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/prodcFrente3.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/producDorso3.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Pala Pádel Pro - Green Militar</h2>
+                            <p class="card-price titulo-secundario"> <strong> $49.990 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <!-- Botón que abre el modal -->
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct3">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 3 -->
+                <div class="modal fade" id="modalProduct3" tabindex="-1" aria-labelledby="modalLabel3"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabel3">La CRATUS BLACK MILITAR ,
+                                    colección 2022.</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> TECNOLOGÍA: </strong></p>
+                                <ol>
+                                    <li>Carbón frame</li>
+                                </ol>
+                                <ol>
+                                    <li>Forma hibrida gota/diamante</li>
+                                </ol>
+                                <ol>
+                                    <li>Núcleo de Eva Black 20</li>
+                                </ol>
+                                <ol>
+                                    <li>Exterior Fibra de vidrio</li>
+                                </ol>
+                                <ol>
+                                    <li>TexTreme</li>
+                                </ol>
+                                <p>es una pala con pegada de fuerte pero versátil, gracias a si diseño con forma hibrida
+                                    gota/diamante, núcleo de <strong> Eva Black 20 </strong>, con exterior flexible de
+                                    fibra de vidrio, con
+                                    textura rugosa para un control estratégico de la bola.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/prodcFrente4.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/producDorso4.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paleta de Padel Pro Staff Tour V2</h2>
+                            <p class="card-price  titulo-secundario"> <strong> $399.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <!-- Botón que abre el modal -->
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct4">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para el producto 4 -->
+                <div class="modal fade" id="modalProduct4" tabindex="-1" aria-labelledby="modalLabel4"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabel4">Paleta de Padel Pro Staff
+                                    Tour V2</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ol>
+                                    <li>Una capa de fibra de carbono tejida estratégicamente ofrece a los jugadores la
+                                        capacidad de golpear con una potencia impresionante.</li>
+                                </ol>
+                                <ol>
+                                    <li>Produce golpes limpios y firmes para una desviación más rápida de la pelota y un
+                                        excelente control.</li>
+                                </ol>
+                                <ol>
+                                    <li>Superficie texturizada que sujeta la pelota al contacto para tener un mejor giro
+                                        y
+                                        excelente sensación en cada tiro.</li>
+                                </ol>
+                                <ol>
+                                    <li>Tipo de cabeza: Redondo.</li>
+                                </ol>
+                                <ol>
+                                    <li>Peso: 365 g.</li>
+                                </ol>
+                                <p>Destacado por una <strong> espuma EVA </strong> firme en su núcleo para una sensación
+                                    nítida, la Pro
+                                    Staff Tour v2 proporciona una precisión superior en los niveles más altos del
+                                    deporte. Los jugadores competitivos apreciarán la geometría actualizada, el mango
+                                    extendido y el patrón de agujeros optimizado, todo ello orientado a un mayor control
+                                    y colocación de los tiros.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="container">
+            <h2 class="text-center mt-5 mb-5 text-light titulo-principal">Pro Bags</h2>
+            <div class="row">
+                <!-- Producto Pro Bags 1 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/bolsoFrente1.webp" class="card-img-top img-fluid img-normal" alt="bolso de frente">
+                        <img src="img/bolsoDorso1.webp" class="card-img-top img-fluid img-hover" alt="bolso de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paletero Bela Super Tour</h2>
+                            <p class="card-price  titulo-secundario"><strong> $234.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag1">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto Pro Bags 1 -->
+                <div class="modal fade" id="modalProductBag1" tabindex="-1" aria-labelledby="modalLabelBag1"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag1">Paletero Bela Super Tour
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>La obsesión es personal. Inspirado y codiseñado con el legendario <strong> Fernando
+                                        Belasteguin </strong>, el bolso de pádel Bela DNA Super Tour fue creado para
+                                    satisfacer todas
+                                    las necesidades de llegar a lo más alto de este deporte. Todas las bases están
+                                    cubiertas con esta bolsa, incluido un revestimiento de TPU que la mantendrá
+                                    impecable.</p>
+                                    <ol>
+                                        <li>Dimensiones: 23,5 x 12 x 12" / 60 x 31 x 31 cm.</li>
+                                    </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto Pro Bags 2 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/bolsoFrente2.webp" class="card-img-top img-fluid img-normal" alt="bolso de frente">
+                        <img src="img/bolsoDorso2.webp" class="card-img-top img-fluid img-hover" alt="bolso de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paletero Women's Padel</h2>
+                            <p class="card-price titulo-secundario"><strong> $213.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag2">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para el producto Pro Bags 2 -->
+                <div class="modal fade" id="modalProductBag2" tabindex="-1" aria-labelledby="modalLabelBag2"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag2">Paletero Women's Padel
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Estilo, funcionalidad y respeto por el medio ambiente. Eso es lo que ofrece este
+                                    paletero. Confeccionado con material reciclado, este paletero lleva la moda allá
+                                    donde va, al tiempo que salva el planeta. Cuenta con dos compartimentos principales
+                                    en los que entran hasta seis paletas, uno de ellos con forro <strong> Thermoguard
+                                    </strong> que protege
+                                    de las temperaturas extremas</p>
+                                    <ol>
+                                        <li>Dimensiones: 22 x 15 x 11" / 55.5 x 38.5 x 28 cm</li>
+                                    </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto Pro Bags 3 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/bolsoFrente3.webp" class="card-img-top img-fluid img-normal" alt="bolso de frente">
+                        <img src="img/bolsoDorso3.webp" class="card-img-top img-fluid img-hover" alt="bolso de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Team Padel Bag</h2>
+                            <p class="card-price titulo-secundario"><strong> $126.999</strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag3">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para el producto Pro Bags 3 -->
+                <div class="modal fade" id="modalProductBag3" tabindex="-1" aria-labelledby="modalLabelBag3"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag3">Team Padel Bag</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Entrar en la pista de pádel requiere un bolso que pueda contener una variedad de
+                                    artículos y el bolso de pádel Team es todo lo que un jugador puede soñar tener para
+                                    cargar con todas sus pertenencias. Su aspecto se adapta a cualquier estilo, y en
+                                    ella caben hasta cuatro paletas, además de la ropa. Otra ventaja es que incluye una
+                                    bolsa con cordón para mantener las zapatillas sudadas separadas del resto de objetos
+                                    del bolso.</p>
+                                    <ol>
+                                        <li>Dimensiones: 22 X 11,5 X 12"/56 X 29 X 31 cm.</li>
+                                    </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto Pro Bags 4 -->
+                <div class="col-12 col-md-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/bolsoFrente4.webp" class="card-img-top img-fluid img-normal" alt="bolso de frente ">
+                        <img src="img/bolsoDorso4.webp" class="card-img-top img-fluid img-hover" alt="bolso de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Tour Red Padel Bag</h2>
+                            <p class="card-price titulo-secundario"><strong> $183.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag4">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para el producto Pro Bags 4 -->
+                <div class="modal fade" id="modalProductBag4" tabindex="-1" aria-labelledby="modalLabelBag4"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag4">Tour Red Padel Bag</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>La bolsa de pádel perfecta resumida en pocas palabras: Bolsa de pádel <strong> Tour
+                                        Red </strong>. En
+                                    esta bolsa hay espacio para todo lo necesario y mucho más, desde los dos
+                                    compartimentos principales con capacidad para hasta seis palas, el bolsillo interior
+                                    a medida para un portátil o una tableta o el bolsillo para accesorios, perfecto para
+                                    objetos personales más pequeños. </p>
+                                <ol>
+                                    <li>Dimensiones: 22,5 X 12 X 12"/57 X 31 X 31 cm</li>
+                                </ol>
+                                <ol>
+                                    <li>Composición: 100 % poliéster</li>
+                                </ol>
+                                <ol>
+                                    <li>El revestimiento Thermoguard protege el equipo contra temperaturas extremas.
+                                    </li>
+                                </ol>
+                                <ol>
+                                    <li>El sistema de transporte versátil incluye una correa de hombro ajustable y
+                                        correas
+                                        de mochila acolchadas.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+        <section class=" container team ">
+            <h2 class="text-center  mb-3 mt-5 text-light titulo-principal">The Team</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card cajas">
+                        <img src="img/team1.webp" class="card-img-top" alt="jugador uno">
+                        <div class="card-body">
+                            <h3 class="card-title titulo-secundario">Teo Irigaray</h3>
+                            <p class="card-text parrafo ">Theo Irigaray es el <strong> jugador número 1 del ranking de
+                                    Francia </strong> y se
+                                caracteriza por su increíble velocidad y reacción. Este jugador francés ocupa el puesto
+                                número 11 del ranking ITF y es un gran apasionado de este apasionante deporte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card cajas">
+                        <img src="img/team2.webp" class="card-img-top" alt="jugador dos">
+                        <div class="card-body">
+                            <h3 class="card-title titulo-secundario">Ramón "Nacho" Guedez</h3>
+                            <p class="card-text parrafo">Ramón (NACHO) Guedez es el <strong> jugador número uno de
+                                    Venezuela </strong>. Su
+                                gran
+                                servicio lo ha convertido en uno de los mejores jugadores del mundo. Está clasificado en
+                                el puesto número 0 del ITF Beach Tennis Tour. Haber formado equipo con Aksel Samardzic
+                                le ha permitido convertirse en una amenaza para todos los equipos del circuito.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card cajas">
+                        <img src="img/team3.webp" class="card-img-top" alt="jugador tres">
+                        <div class="card-body">
+                            <h3 class="card-title titulo-secundario">Aksel Samardzic</h3>
+                            <p class="card-text parrafo">Aksel Samardzic es el <strong> jugador número uno de Aruba
+                                </strong>. Su servicio
+                                se ha
+                                convertido en un arma única en el circuito. Aksel ocupa el puesto número 21 en el
+                                circuito ITF Beach Tennis. Se espera que este jugador tenga un futuro brillante en los
+                                próximos años.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  cajas">
+                        <img src="img/team4.webp" class="card-img-top" alt="jugador cuatro">
+                        <div class="card-body">
+                            <h3 class="card-title titulo-secundario">Diego Guzmán</h3>
+                            <p class="card-text parrafo">Diego Guzmán es uno de los tenistas de playa más jóvenes y
+                                mejor
+                                clasificados del mundo. <strong> Es el tercer jugador nacional de Venezuela y el número
+                                    30 en el
+                                    ranking ITF </strong>. Diego es un jugador rápido y agresivo que te mantendrá al
+                                borde de tu
+                                asiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mt-4">
+                <img src="img/team5.webp" class="card-img-top" alt="grupo de jugadores">
+            </div>
+        </section>
+
+        <section class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12 text-center text-light titulo-secundario">
+                    <h3 class="mb-3 mt-4">Licenciatorios Oficial</h3>
+                    <img src="img/COLO.webp" class="colo mx-auto d-block" alt="Licenciatorios Oficial">
+                    <h3 class="text-light mb-3 mt-4">Algunos de nuestros clientes</h3>
+                    <img src="img/clientes.webp" class="tres mx-auto d-block" alt="Clientes">
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row justify-content-center parrafo">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <h3 class="mb-4 text-light bg-dark">Mantente Informado</h3>
+                    <p class="text-light bg-dark">Suscríbete a nuestro boletín para recibir las últimas noticias y
+                        actualizaciones.</p>
+                    <form>
+                        <div class="input-group mb-5">
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico"
+                                aria-label="Correo electrónico" required>
+                            <button class="btn btn-primary" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 parrafo">
+        <div class="container">
+            <div class="row">
+                <!-- Información personal -->
+                <div class="col-12 col-md-4">
+                    <h5>Demaria Pino Brisa</h5>
+                    <ul class="list-unstyled">
+                        <li>Edad: 23 años</li>
+                        <li>Email: brisa.demaria@davinci.edu.ar</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-12 col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                        </li>
+                        <li><a href="#" class="text-white"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información sobre el Pádel -->
+                <div class="col-12 col-md-4">
+                    <img src="img/yo1.webp" class="foto-personal" alt="">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Padel Club | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

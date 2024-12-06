@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Move</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="JS/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">
+                <!-- Menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-light"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand text-light titulo-secundario" href="#">Zen Move</a>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse d-flex justify-content-center d-none d-lg-flex"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 fs-5 titulo-secundario">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="sale.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Carrito -->
+                <div class="nav-item ms-3">
+                    <a class="nav-link text-light" href="#" id="cart-link">
+                        <i class="bi bi-cart fs-3"></i>
+                        <span id="cart-count" class="badge bg-danger">0</span>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 titulo-secundario">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sale.html">Sale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-productos" id="productos">
+            <div class="image-container">
+                <img src="img/palas.webp" class="img-product" alt="palas de padel">
+                <div class="text-overlay">
+                    <h1 class="text-center titulo-principal">Equpate para ganar</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Producto 5 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/paletaFrene1.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/paletaDorso1.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paleta de Padel Bela Pro V2.5 Argentina
+                                Edición Limitada
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $589.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag5">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para el producto 5 -->
+                <div class="modal fade" id="modalProductBag5" tabindex="-1" aria-labelledby="modalLabelBag5"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag5">Paleta de Padel Bela Pro
+                                    V2.5 Argentina
+                                    Edición Limitada</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Diseñada en colaboración con el ex-número 1 del mundo <strong> Fernando Belasteguín
+                                    </strong>, la Bela
+                                    Pro V2.5 pone su paleta de padel en las manos de todos los jugadores que quieren
+                                    llegar a la cima. Inspirada en su incansable dedicación a este deporte y en su
+                                    insaciable afán por ganar, la Bela Pro utiliza tecnología de vanguardia para ofrecer
+                                    el máximo rendimiento, ideal para jugadores avanzados que buscan dictar el punto.
+                                </p>
+                                <ol>
+                                    <li>Elaborado con precisión utilizando una construcción tubular de carbono, lo que
+                                        garantiza un grosor tubular uniforme y da como resultado una mayor durabilidad,
+                                        un
+                                        control de tiro increíble y una sensación superior en toda la paleta.</li>
+                                </ol>
+                                <ol>
+                                    <li>Integra carbono premium en el marco para ofrecer una combinación de gran
+                                        potencia y
+                                        una rápida capacidad de respuesta, lo que aumenta la propulsión de la cara de la
+                                        paleta.</li>
+                                </ol>
+                                <ol>
+
+                                    <li>Produce golpes limpios y firmes para una desviación más rápida de la pelota y un
+                                        excelente control.</li>
+                                </ol>
+                                <ol>
+                                    <li>Superficie texturizada que sujeta la pelota al contacto para tener un mejor giro
+                                        y
+                                        excelente sensación en cada tiro.</li>
+                                </ol>
+                                <ol>
+                                    <li>Proceso avanzado de perforación de orificios que produce más saque en cada
+                                        golpe.
+                                    </li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto 6 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/paletaFrente2.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/paletaDorso2.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paleta de Padel Accent LT Padel 2
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $469.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag6 ">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 6 -->
+                <div class="modal fade" id="modalProductBag6" tabindex="-1" aria-labelledby="modalLabelBag6"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag6">Paleta de Padel Accent LT
+                                    Padel 2</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>La textura más gruesa aumenta el tiempo de contacto con la cara del pádel,
+                                    proporcionando <strong> un efecto de amortiguación </strong> que genera máxima
+                                    comodidad y potencia sin
+                                    esfuerzo en cada golpe.
+                                </p>
+                                <ol>
+                                    <li>La forma aumenta la amortiguación en toda la superficie de golpeo y estrecha el
+                                        perfil para reducir las vibraciones y mejorar el punto dulce.</li>
+                                </ol>
+                                <ol>
+                                    <li>Espuma de EVA blanda ofrece una sensación de acolchado con una impresionante
+                                        absorción de impactos, lo que genera una combinación efectiva de comodidad y
+                                        potencia ligera.</li>
+                                </ol>
+                                <ol>
+                                    <li>Tipo de cabeza: Lágrima.</li>
+                                </ol>
+                                <ol>
+                                    <li>Peso: 350 g *sin incluir el cordón para la muñeca</li>
+                                </ol>
+                                <ol>
+                                    <li>Longitud: 455 milímetros.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto 7 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/paletaFrente3.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/paletaDorso3.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paleta de Padel Ultra LT V2
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $426.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag7">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 7 -->
+                <div class="modal fade" id="modalProductBag7" tabindex="-1" aria-labelledby="modalLabelBag7"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag7">Paleta de Padel Ultra LT
+                                    V2</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Descripción</strong> </p>
+                                <p>La Ultra LT v2 ofrece una combinación seria de confort, <strong> potencia y
+                                        jugabilidad </strong> para
+                                    los jugadores que buscan una raqueta de pádel ligera. No solo es la raqueta de padel
+                                    más ligera de la línea Ultra v2, sino que también cuenta con una espuma EVA suave
+                                    que proporciona una sensación más cómoda y amortiguada con una absorción eficaz de
+                                    los impactos.
+                                </p>
+                                <ol>
+                                    <li>Tamaño de cabeza: 81 sq in / 523 sq cm.</li>
+                                </ol>
+                                <ol>
+                                    <li>Peso: 350 g..</li>
+                                </ol>
+                                <ol>
+                                    <li>Longitud: 455 mm.</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/paletaFrente4.webp" class="card-img-top img-fluid img-normal" alt="paleta de frente">
+                        <img src="img/paletaDorso4.webp" class="card-img-top img-fluid img-hover" alt="paleta de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Paleta de Padel Rough WS 1.25
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $120.000 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag8">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 8 -->
+                <div class="modal fade" id="modalProductBag8" tabindex="-1" aria-labelledby="modalLabelBag8"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag8">Paleta de Padel Rough WS
+                                    1.25</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Esta paleta Wilson permite <strong> mejorar tu rendimiento </strong>. Está preparada
+                                    para ayudar a
+                                    principiantes y jugadores ocasionales. Mejora tu velocidad y potencia gracias a su
+                                    estructura y diseño renovado. Con ella podrás lucir un gran estilo y también mejorar
+                                    tu juego.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto 9 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/peloteroFrente1.webp" class="card-img-top img-fluid img-normal" alt="pelotero de frente">
+                        <img src="img/peloteroDorso1.webp" class="card-img-top img-fluid img-hover" alt="pelotero de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Pelota de Padel X3 Speed
+                            </h2>
+                            <p class="card-price titulo-secundario"> <strong>$15.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag9">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 9 -->
+                <div class="modal fade" id="modalProductBag9" tabindex="-1" aria-labelledby="modalLabelBag9"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag9">Pelota de Padel X3 Speed
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción</strong></p>
+                                <p>Diseñada para ofrecer la mejor combinación de <strong> consistencia, durabilidad y
+                                        capacidad
+                                        de juego </strong>, la serie X3 de Wilson aumenta las expectativas de
+                                    rendimiento de las
+                                    pelotas de pádel. Perfecta para superficies de pista más lentas, la X3 Speed
+                                    presenta fieltro tejido de primera calidad y un núcleo resistente para ofrecer una
+                                    excelente combinación de capacidad de respuesta rápida y tacto superior
+                                </p>
+                                <ol>
+                                    <li>El fieltro tejido de primera calidad ofrece un tacto superior.</li>
+                                </ol>
+                                <ol>
+                                    <li>El núcleo resistente proporciona un rendimiento dinámico y duradero.</li>
+                                </ol>
+                                <ol>
+                                    <li>Juego más rápido para un rendimiento ideal en superficies de pistas más lentas y
+                                        con
+                                        más arena.</li>
+                                </ol>
+                                <ol>
+                                    <li>El diseño en forma de aro de la tapa reduce el desperdicio de plástico.</li>
+                                </ol>
+                                <ol>
+                                    <li>Incluye 3 pelotas por tubo.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/peloteroFrente2.webp" class="card-img-top img-fluid img-normal" alt="pelotero de frente">
+                        <img src="img/peloteroDorso2.webp" class="card-img-top img-fluid img-hover" alt="pelotero de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Pelota de Padel X3
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $14.499 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag10">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 10 -->
+                <div class="modal fade" id="modalProductBag10" tabindex="-1" aria-labelledby="modalLabelBag10"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag10">Pelota de Padel X3 Speed
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p><strong> Diseñada para ofrecer la mejor combinación de consistencia, durabilidad y
+                                        jugabilidad </strong>, la serie X3 de Wilson eleva las expectativas de
+                                    rendimiento de las
+                                    pelotas de pádel. Ideal para superficies de canchas más rápidas, la X3 cuenta con
+                                    fieltro Dura-Weave para un excelente desgaste del logo y un rendimiento fiable
+                                </p>
+                                <ol>
+                                    <li>Fieltro Dura-Weave para un juego más consistente y un desgaste excepcional del
+                                        logotipo.</li>
+                                </ol>
+                                <ol>
+                                    <li>Rendimiento ideal en superficies de cancha más rápidas con menos arena.</li>
+                                </ol>
+                                <ol>
+                                    <li>Perfecta para jugadores de pádel de alto nivel.</li>
+                                </ol>
+                                <ol>
+                                    <li>El overcap ecológico reduce los residuos de plástico.</li>
+                                </ol>
+                                <ol>
+                                    <li>Incluye 3 pelotas por tubo.</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto 11 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/peloteroFrente3.webp" class="card-img-top img-fluid img-normal" alt="pelotero de frente">
+                        <img src="img/peloteroDorso3.webp" class="card-img-top img-fluid img-hover" alt="pelotero de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Pelota de Padel Premier X3 Speed
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $15.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag11">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 11 -->
+                <div class="modal fade" id="modalProductBag11" tabindex="-1" aria-labelledby="modalLabelBag11"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag11">Pelota de Padel Premier
+                                    X3 Speed</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Descripción</strong> </p>
+                                <p>Diseñado para acelerar el juego, este tubo de 3 pelotas de Wilson es <strong> ideal
+                                        para
+                                        superficies de cancha más lentas </strong>, altitudes bajas y condiciones de
+                                    clima frío. Cada
+                                    pelota está hecha con New Dura-Weave Felt que está firmemente envuelto alrededor del
+                                    núcleo, lo que permite que la pelota se mueva más rápido incluso en condiciones más
+                                    lentas.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 12 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/peloteroFrente4.webp" class="card-img-top img-fluid img-normal" alt="pelotero de frente">
+                        <img src="img/peloteroDorso4.webp" class="card-img-top img-fluid img-hover" alt="pelotero de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Pelota de Padel Premier X3
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong>$15.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag12">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 12 -->
+                <div class="modal fade" id="modalProductBag12" tabindex="-1" aria-labelledby="modalLabelBag12"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag12">Pelota de Padel Premier
+                                    X3</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Diseñada para ralentizar el juego, este tubo de 3 pelotas de Wilson es ideal para
+                                    superficies más rápidas, altitudes más altas o condiciones de calor y humedad. Cada
+                                    pelota está hecha con <strong> New Dura-Weave Felt </strong> que tiene coloración
+                                    HiVis para un fácil
+                                    seguimiento. La pelota oficial de Premier Padel, está diseñada para ofrecer una
+                                    combinación de jugabilidad y consistencia. Considéralo tu arma secreta para
+                                    prolongar los peloteos y controlar el ritmo del juego.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 13 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/zapasFrente1.webp" class="card-img-top img-fluid img-normal" alt="zapatillas de frente">
+                        <img src="img/zapazDorso1.webp" class="card-img-top img-fluid img-hover" alt="zapatillas de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Bela Tour M
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $256.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag13">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 13 -->
+                <div class="modal fade" id="modalProductBag13" tabindex="-1" aria-labelledby="modalLabelBag13"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag13">Bela Tour M</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p>Diseñadas por la leyenda del pádel, <strong> Fernando Belasteguin </strong>, que nos
+                                    ha servido como
+                                    fuente de inspiración, las zapatillas de pádel Bela Tour son perfectas para el
+                                    jugador de pádel avanzado que desea llevar su juego al siguiente nivel.
+                                </p>
+                                <ol>
+                                    <li>Agarre óptimo:Suela de diseño biomecánico con diseños de vórtices en el antepié
+                                        y el
+                                        talón para optimizar la rotación y el movimiento de pivote en todas las
+                                        direcciones
+                                        en la cancha de pádel.</li>
+                                </ol>
+                                <ol>
+                                    <li>Sensifeel 2.0: Empeine de capas mínimas con un diseño de malla para mejorar la
+                                        transpirabilidad, la sensación, la comodidad y un ajuste homogéneo.</li>
+                                </ol>
+                                <ol>
+                                    <li>Espuma fundida: La entresuela de EVA integra material de hilo de plástico
+                                        reciclado
+                                        para ofrecer una excelente capacidad de respuesta a la vez que mantiene una
+                                        huella
+                                        medioambiental reducida.</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 14 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/zapasFrente2.webp" class="card-img-top img-fluid img-normal" alt="zapatillas de frente">
+                        <img src="img/zapasDorso2.webp" class="card-img-top img-fluid img-hover" alt="zapatillas de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Bela Tour M
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $256.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag14">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 14 -->
+                <div class="modal fade" id="modalProductBag14" tabindex="-1" aria-labelledby="modalLabelBag14"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag14">Bela Tour M</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Descripción</strong> </p>
+                                <p> Las mejoras tecnológicas, que incluyen un chasis de torsión 4D compuesto de una sola
+                                    pieza y una suela exterior específica para pádel de 360°, hacen que estas zapatillas
+                                    sean aún más <strong> cómodas y estables </strong> al esprintar y girar en la pista
+                                    de pádel. Si
+                                    añadimos que la malla es 100 % reciclada, la plantilla es 50 % reciclada y la lámina
+                                    de TPU es 55 % reciclada, serás intocable con estas zapatillas sostenibles.
+                                </p>
+                                <ol>
+                                    <li>Agarre óptimo:Suela de diseño biomecánico con diseños de vórtices en el antepié
+                                        y el
+                                        talón para optimizar la rotación y el movimiento de pivote en todas las
+                                        direcciones
+                                        en la cancha de pádel.</li>
+                                </ol>
+                                <ol>
+                                    <li>Sensifeel 2.0: Empeine de capas mínimas con un diseño de malla para mejorar la
+                                        transpirabilidad, la sensación, la comodidad y un ajuste homogéneo.</li>
+                                </ol>
+                                <ol>
+                                    <li>Espuma fundida: La entresuela de EVA integra material de hilo de plástico
+                                        reciclado
+                                        para ofrecer una excelente capacidad de respuesta a la vez que mantiene una
+                                        huella
+                                        medioambiental reducida.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Producto 15 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/zapasFrente3.webp" class="card-img-top img-fluid img-normal" alt="zapatillas de frente">
+                        <img src="img/zapasDorso3.webp" class="card-img-top img-fluid img-hover" alt="zapatillas de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">Hurakn 2.0 M
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $209.999</strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag15">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 15 -->
+                <div class="modal fade" id="modalProductBag15" tabindex="-1" aria-labelledby="modalLabelBag15"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag15">Hurakn 2.0 M</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción</strong></p>
+                                <p> Los reflejos rápidos te llevarán lejos en la pista de pádel. Las zapatillas <strong>
+                                        Hurakn
+                                        2.0 de Wilson </strong> te ayudan a llegar a cada pelota con una agilidad de
+                                    contracción
+                                    rápida. Esta zapatilla ultraligera y transpirable está hecha con una suela diseñada
+                                    específicamente para el movimiento en la pista de pádel.
+                                </p>
+                                <ol>
+                                    <li>El chasis cuenta con tecnología de arco diseñada para la velocidad para brindar
+                                        máxima estabilidad y flexibilidad.</li>
+                                </ol>
+                                <ol>
+                                    <li>La caída del talón a la punta (9 mm) proporciona el mejor equilibrio entre
+                                        comodidad
+                                        y rendimiento.</li>
+                                </ol>
+                                <ol>
+                                    <li>La construcción OrthoLite troquelada garantiza una excelente combinación de
+                                        soporte
+                                        y comodidad.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 16 -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3  d-flex justify-content-center product-card">
+                    <div class="card efecto shadow-lg" style="width: 18rem;">
+                        <img src="img/zapasFrente4.webp" class="card-img-top img-fluid img-normal" alt="zapatillas de frente">
+                        <img src="img/zapasDorso4.webp" class="card-img-top img-fluid img-hover" alt="zapatillas de costado">
+                        <div class="card-body boton">
+                            <h2 class="card-text description titulo-secundario">K Padel 3.0 M
+                            </h2>
+                            <p class="card-price titulo-secundario"><strong> $85.999 </strong></p>
+                            <button class="btn btn-outline-primary parrafo">Comprar</button>
+                            <button class="btn btn-outline-secondary mt-2 parrafo" data-bs-toggle="modal"
+                                data-bs-target="#modalProductBag16">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para el producto 16 -->
+                <div class="modal fade" id="modalProductBag16" tabindex="-1" aria-labelledby="modalLabelBag16"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title titulo-secundario" id="modalLabelBag16">K Padel 3.0 M</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong> Descripción </strong></p>
+                                <p> <strong> K PADEL 3.0 </strong>, con su nueva construcción y diseño aporta más
+                                    agilidad y estabilidad
+                                    para el juego moderno del Padel. La comodidad con la ligereza es lo más destacado de
+                                    este modelo.
+                                </p>
+                                <ol>
+                                    <li>EVA de alta densidad: Proporciona alta rigidez y mayor estabilidad y
+                                        amortiguación.
+                                    </li>
+                                </ol>
+                                <ol>
+                                    <li>Mayor sensibilidad: Diseñado con una parte superior confeccionada en tejido
+                                        altamente duradero y elástico, que proporciona mayor sensación y comodidad.</li>
+                                </ol>
+                                <ol>
+                                    <li>Superficie: Padel Court</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary parrafo">Comprar</button>
+                                <button type="button" class="btn btn-secondary parrafo"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white pt-5 pb-3 parrafo">
+        <div class="container">
+            <div class="row">
+                <!-- Información personal -->
+                <div class="col-12 col-md-4">
+                    <h5>Demaria Pino Brisa</h5>
+                    <ul class="list-unstyled">
+                        <li>Edad 23 años</li>
+                        <li>Email:> brisa.demaria@davinci.edu.ar</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-12 col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li class="mr-3"><a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                        </li>
+                        <li><a href="#" class="text-white"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información sobre el Pádel -->
+                <div class="col-12 col-md-4">
+                    <img src="img/yo1.webp" class="foto-personal" alt="">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Padel Club | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
